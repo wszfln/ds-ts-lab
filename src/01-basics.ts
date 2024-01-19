@@ -3,6 +3,12 @@ interface Friend {
     phone: string;
     age: number
 }
+interface Colleague {
+    name: string;
+    department: string;
+    email: string;
+    extension: number
+}
 
 // (Optional) Change the names below to your friends.
 
@@ -22,7 +28,7 @@ const Friend1 = {
   console.log(Friends[1]);
   
   //   -------------------
-  const colleague1 = {
+  const Colleague1 = {
     name: "Ralph Graham",
     department: "Engineering",
     contact: {
@@ -31,7 +37,7 @@ const Friend1 = {
     },
   };
   
-  const colleague2 = {
+  const Colleague2 = {
     name: "Patti Burke",
     department: "Finance",
     contact: {
@@ -40,7 +46,7 @@ const Friend1 = {
     },
   };
   
-  const colleague3 = {
+  const Colleague3 = {
     name: "Dean Sullivan",
     department: "HR",
     contact: {
@@ -48,9 +54,9 @@ const Friend1 = {
       extension: 125,
     },
   };
-  const colleagues = {
-    current: [colleague1, colleague2, colleague3],
+  const Colleagues = {
+    current: [Colleague1, Colleague2, Colleague3],
     former: [],
   };
   
-  console.log(colleagues.current[0]);
+  console.log(Colleagues.current[0]);
