@@ -6,9 +6,15 @@ interface Friend {
 interface Colleague {
     name: string;
     department: string;
-    email: string;
-    extension: number
+    contact: {
+        email: string,
+        extension: number,
+      }
 }
+interface ColleagueHistory {
+    current: Colleague[],
+    former: Colleague[]
+  }
 
 // (Optional) Change the names below to your friends.
 
@@ -54,7 +60,7 @@ const Friend1 = {
       extension: 125,
     },
   };
-  const Colleagues = {
+  export const Colleagues : ColleagueHistory = {
     current: [Colleague1, Colleague2, Colleague3],
     former: [],
   };
