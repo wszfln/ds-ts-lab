@@ -2,24 +2,24 @@ import {Friend, Colleague, ColleagueHistory } from './myTypes'
 
 // (Optional) Change the names below to your friends.
 
-const Friend1 = {
+const friend1: Friend = {
     name: "Jia Yang",
     phone: "087-12345",
     age: 25,
   };
   
-  const Friend2 = {
+  const friend2: Friend = {
     name: "Jingyi Wang",
     phone: "086--12345",
     age: 31,
   };
   
-  export const Friends = [Friend1, Friend2];
+  export const friends: Friend[] = [friend1, friend2];
 
   // console.log(Friends[1]);
   
   //   -------------------
-  const Colleague1 = {
+  const colleague1: Colleague = {
     name: "Ralph Graham",
     department: "Engineering",
     contact: {
@@ -28,7 +28,7 @@ const Friend1 = {
     },
   };
   
-  const Colleague2 = {
+  const colleague2: Colleague = {
     name: "Patti Burke",
     department: "Finance",
     contact: {
@@ -37,7 +37,7 @@ const Friend1 = {
     },
   };
   
-  const Colleague3 = {
+  const colleague3: Colleague = {
     name: "Dean Sullivan",
     department: "HR",
     contact: {
@@ -45,8 +45,8 @@ const Friend1 = {
       extension: 125,
     },
   };
-  export const Colleagues = {
-    current: [Colleague1, Colleague2, Colleague3],
+  export const colleagues: ColleagueHistory = {
+    current: [colleague1, colleague2, colleague3],
     former: [],
   };
   
